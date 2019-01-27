@@ -1,0 +1,40 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: config-service-for-komRAD
+  cloud:
+    config:
+      server:
+        git:
+          ignore-local-ssh-settings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEowIBAAKCAQEAwwyJUpiRD0wlnsxKT4xhQVCnfZc2PKoicydzCFhIjY9pd8R+
+            r4SWxTrOA9ncyO48eBkrrYkLk9mlI3Ytto+hVunpBw0GcjVGqUoGuqCJB1V+mT/d
+            Qu5K8+xTMA6U5WGM8YBVq7f9Q0f9l4PMHrG+/bsOAPSY25YIGrYCoRoEJ8CiTmrb
+            MRfTL+CKphvOYiX4DTTkEkHkjZIyOnAJiD+ma0WglAeL9EuySG7OJf6hf5KRf9s8
+            FlrNM9zVNzrhICY7eJ3ZvimhZ4fufIUL91q5//1xTN7hlwbzQ6URbB6C1FpYe3Po
+            okOOvs+TvgmdROmFDTQQ32IyZ8npMumcZHsiuQIDAQABAoIBADO4RUmTjxOBW5Bq
+            F2JUlQ1et6sDx6v6aTwjv8r8rfBrkMnjXrxn6hrOZwZ6ZKMbGQm3ku9nIZzI35Mx
+            qRl5qIyFZfcqqwTpv5zwNiySmQNK1lEIsEEpMtLPXZempjDU1yzKnOz10sBefI4K
+            sruI4l4hlasHMOk5NVjv3m6dmXB4m2e/LqtdIhCWIzZ48AnbeuKKu6ywNRnnrqUx
+            9+sS2UR9D7PaJwAANgLHyKmzGlW6jaLpVppXAMaj6aAdTLDGcIGKkrMvsMLQutd4
+            4To72CSsUv5qytquvOKwjmApN+nhrw+AHpZl5Ujr98UVkOEfMsjMInL0Ox5v0vGt
+            MtDVnUkCgYEA6zPxFy9C9sf5tgJoSC+8cxRlZenrkqxCJnXIeit6S7lD2Vcr1hs7
+            vL/LJCm84gcH318G1GkpH2MObaDtyyL9rhUwjqUEhD2gr5H3fJFRd6OMQVw54cyV
+            m7NptkdzS1ClGDqdigfCAKYEEIMd8g8mXdmNBCBCLEmu3+aiPRgbM5sCgYEA1Eur
+            X9se4Rgz2UGPMHqLJ5rUpUNMEepREa1evd5OcD4CEfD3AnLAJRnkhO3aZJESLIYE
+            6FCR1AioN58n3OOvpgx/HViwnqxuCrwu23RW1BrK72BttW9hSpQwJQKOoxhw2sRP
+            sep9YEVD09L8jSXpCxg1mcSJQ1S3G8dA2pGxmjsCgYAD2rwOtzWPucM72lo/JJkg
+            AauPuf+kTbJf0vpQFjpQ115nR2huf8/AzhvUIeL4iUj1vibsgDSuUP9BiKuc8pvZ
+            qHs9OzMRv7jMZ8X4gqElJsb7ozlHnASvoocO96jKCS5LcVp3kpz5Sb8zThLFjr4A
+            N7p54NV0yFhXTv5Fpgl8FQKBgEt08d7KRXmAXr1z3e8/P0K+d6Kd/uXHQTVlR+14
+            nKysfZPe8A0AuGb3gw/0ctGX9ru4jvn72TliMlhCy6ppiz8b5fqKUYy0gRBzvrvl
+            6A7Pzx2ySoxYoF4fudUNyaESyNoZOLJmRFX5iJg7v+RzexekbTjQcHFsJQFMmzKU
+            4mmNAoGBAMHkTsj+Ktnakg9FKSqx43zXCLHAFMV9ypP/Oyt896X8Y/r7XlCASdps
+            zX6TR3jXlBo8X+BgppcjTwm5M3DsYSHPFB1hN4GF9LenbHxPH3bm1bs/RBNlbUxf
+            Y1ExD65sXvziooZXrpTcel4R61OCfmceUnFUGu99e8IoZOVNfps6
+            -----END RSA PRIVATE KEY-----
+          search-paths: "{profile}"
+          uri: "git@bitbucket.org:Sakwer/configrepo.git"
